@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <NavBar></NavBar>
     <img alt="Vue logo" src="./assets/logo.png">
     <HelloWorld msg="Welcome to Your Vue.js App"/>
   </div>
@@ -7,11 +8,13 @@
 
 <script>
 import HelloWorld from './components/HelloWorld.vue'
+import NavBar from './components/NavBar.vue'
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 export default {
   name: 'app',
   components: {
-    HelloWorld
+    HelloWorld, NavBar
   }
 }
 </script>
@@ -23,6 +26,5 @@ export default {
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
 }
 </style>
